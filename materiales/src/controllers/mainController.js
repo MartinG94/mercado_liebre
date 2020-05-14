@@ -9,6 +9,7 @@ const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 const controller = {
 	root: (req, res) => {
 		// Do the magic
+		res.send(products);
 	},
 	search: (req, res) => {
 		// Do the magic
