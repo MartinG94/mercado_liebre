@@ -16,7 +16,8 @@ const controller = {
 		})
 		res.render('index', {
 			productosEnOfertas: productsInSale,
-			productosVisitados: productsVisited
+			productosVisitados: productsVisited,
+			llevarAMil: toThousand
 		});
 	},
 	search: (req, res) => {
