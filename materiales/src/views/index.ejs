@@ -26,7 +26,7 @@
 								<img src="/images/products/<%= productoVisitado.image %>" alt="imagen de producto">
 							</figure>
 							<article class="product-box_data">
-								<h2><%= productoVisitado.price - (productoVisitado.price * productoVisitado.discount / 100) %></h2>
+								<h2><%= llevarAMil(productoVisitado.price - (productoVisitado.price * productoVisitado.discount / 100)) %></h2>
 								<span>DISCOUNT <%= productoVisitado.discount %> OFF</span>
 								<p><%= productoVisitado.name %></p>
 								<i class="fas fa-truck"></i>
@@ -54,7 +54,7 @@
 								<img src="/images/products/<%= productoEnOferta.image %>" alt="imagen de producto">
 							</figure>
 							<article class="product-box_data">
-								<h2><%= productoEnOferta.price - (productoEnOferta.price * productoEnOferta.discount / 100) %></h2>
+								<h2><%= llevarAMil(productoEnOferta.price - (productoEnOferta.price * productoEnOferta.discount / 100)) %></h2>
 								<span>DISCOUNT <%= productoEnOferta.discount %> OFF</span>
 								<p><%= productoEnOferta.name %> </p>
 								<i class="fas fa-truck"></i>
